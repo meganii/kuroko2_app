@@ -13,7 +13,7 @@ set :deploy_to, "/home/app/kuroko2/"
 set :rbenv_type, :user
 set :rbenv_ruby, '2.3.1'
 
-set :scm, :git
+set :unicorn_config_path, '/home/app/kuroko2/current/config/unicorn/production.rb'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
