@@ -43,7 +43,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'kuroko2'
+gem 'kuroko2', path: '/Users/meganii/Work/Site/kuroko2/kuroko2'
+
 group :development do
   gem 'foreman'
 end
