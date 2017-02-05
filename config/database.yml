@@ -11,11 +11,11 @@
 #
 default: &default
   adapter: mysql2
-  encoding: utf8mb4
+  encoding: utf8
   pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  username: kuroko2
+  password: kuroko2
+  host: localhost
 
 development:
   <<: *default
@@ -49,6 +49,4 @@ test:
 #
 production:
   <<: *default
-  database: kuroko2_app_production
-  username: kuroko2_app
-  password: <%= ENV['KUROKO2_APP_DATABASE_PASSWORD'] %>
+  database: kuroko2
