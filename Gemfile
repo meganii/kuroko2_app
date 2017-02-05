@@ -47,4 +47,9 @@ gem 'kuroko2', :git => 'git@github.com:meganii/kuroko2.git'
 
 group :development do
   gem 'foreman'
+  gem 'capistrano', '~> 3.4'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano3-unicorn'
 end
