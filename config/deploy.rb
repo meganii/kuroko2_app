@@ -29,7 +29,8 @@ set :unicorn_config_path, '/home/app/kuroko2/current/config/unicorn/production.r
 # append :linked_files, "config/database.yml", "config/secrets.yml"
 
 # Default value for linked_dirs is []
-# append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+# 同じくsharedに上記のディレクトリを生成し、currentにシンボリックリンクを張る
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
